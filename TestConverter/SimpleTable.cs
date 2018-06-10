@@ -18,5 +18,7 @@ namespace TestConverter
             Columns = new List<KeyValuePair<string, Type>>();
             Data = new List<object[]>();
         }
+
+        public override string ToString() => Name;
     }
 }
