@@ -114,6 +114,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindowBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -139,6 +140,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TapeTracker.Core\TapeTracker.Core.csproj">
+      <Project>{4b18743e-4372-47d4-99b1-01196fe1e6f3}</Project>
+      <Name>TapeTracker.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TapeTracker.Database\TapeTracker.Database.csproj">
+      <Project>{8ed53fa8-8574-445f-8c4a-95d7f350f47f}</Project>
+      <Name>TapeTracker.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TapeTracker.Model\TapeTracker.Model.csproj">
+      <Project>{010490cd-8774-4b69-abea-6a70f71b3c0b}</Project>
+      <Name>TapeTracker.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TapeTracker.View\TapeTracker.View.csproj">
+      <Project>{bee221e7-eb44-4f4c-9920-0f225b9a2236}</Project>
+      <Name>TapeTracker.View</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
